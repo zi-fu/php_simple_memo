@@ -1,11 +1,11 @@
 phpでメモ帳を作成
 
 # 開発環境の立ち上げ
-$ cd docker_simple_memo_php
-$ docker-compose -f .docker_memo/docker-compose.yml up -d
+cd docker_simple_memo_php
+docker-compose -f .docker_memo/docker-compose.yml up -d
 
 # 開発環境を止める
-$ docker-compose -f .docker_memo/docker-compose.yml down
+docker-compose -f .docker_memo/docker-compose.yml down
 
 
 # 参考
