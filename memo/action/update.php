@@ -16,9 +16,6 @@ $edit_content = $_POST['edit_content'];
 $user_id = getLoginUserId();
 $database_handler = getDatabaseConnection();
 
-
-
-
 try {
   if ($statement = $database_handler->prepare('UPDATE memos SET title = :title, content = :content, updated_at = NOW() WHERE id = :edit_id AND user_id = :user_id')) {
     $statement->bindParam(':title', htmlspecialchars($edit_title));

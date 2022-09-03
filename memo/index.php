@@ -3,7 +3,7 @@ require '../common/auth.php';
 require '../common/database.php';
 
 if(!isLogin()){
-    header('Location: ../memo/');
+    header('Location: ../login/');
     exit;
 }
 
@@ -52,7 +52,7 @@ if (isset($_SESSION['select_memo'])){
                         </div>
                         <div class="pr-1">
                             <a href="./action/add.php" class="btn btn-success"><i class="fas fa-plus"></i></a>
-                            <a href="../login/" class="btn btn-dark"><i class="fas fa-sign-out-alt"></i></a>
+                            <a href="./action/logout.php" class="btn btn-dark"><i class="fas fa-sign-out-alt"></i></a>
                         </div>
                     </div>
                     <div class="left-memo-title h3 pl-3 pt-3">
