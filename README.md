@@ -1,4 +1,5 @@
-phpでメモ帳を作成
+phpでメモ帳を作成(ノーフレームワーク)
+参考教材：テックピット
 
 cd docker_simple_memo_php
 
